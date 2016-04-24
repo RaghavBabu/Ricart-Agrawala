@@ -1,0 +1,30 @@
+Ricart-Agrawala Mutual exclusion algorithm 
+
+Compile: 
+javac *.java
+
+Run:
+java Process PROCESS_ID TOTAL_PROCESS
+
+Functionalities:
+
+Reads all processes IP addresses and port from XML file.
+
+Ricart Agrawala algorithm is initiated only after all the processes are started.
+
+Only one process can use the critical section at a point of time.
+Mutual exclusion between processes is implemented.
+
+Process sends requests to all other process and acquires the critical section only if it get replies from all other processes.
+Otherwise it waits to acquire the critical section.
+
+Used Lamport time stamp to order events in different processes.
+
+If two processes tried to  acquire critical section at the same time, one with the smallest process id acquires the CS.
+
+Printed the CS acquired and released time in a file which can be used for comparison.
+
+Handled all failure cases and the process runs infinitely acquiring and releasing CS.
+
+Events like Deposit and Withdrawal occurs within a process and on occurring CS, amount transferred to another process.
+
